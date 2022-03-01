@@ -5,11 +5,11 @@ Easy DDOS Script
 
 MacOS/Linux/Windows
 
-`1.)git clone https://github.com/Alektherblxdev/Easy-ddos
+```1.)git clone https://github.com/Alektherblxdev/Easy-ddos
 
 2.) cd Easy-ddos
 
-3.) python3 hehe.py`
+3.) python3 hehe.py```
 
 ## Как использовать?
 `python3 st.py -d`
