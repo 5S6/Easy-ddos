@@ -5,7 +5,7 @@ Easy DDOS Script
 
 MacOS/Linux/Windows
 
-***1.)git clone https://github.com/Alektherblxdev/Easy-ddos***
+***1.) git clone https://github.com/Alektherblxdev/Easy-ddos***
 
 ***2.) cd Easy-ddos***
 
