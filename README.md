@@ -13,7 +13,7 @@ MacOS/Linux/Windows
 
 
 ## Как использовать?
-`python3 st.py -d`
+`python3 hehe.py -d`
 
 	-h - помощь
 	-s - ИП или сайт
